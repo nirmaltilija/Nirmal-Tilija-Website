@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nirmal Tilija - Personal Portfolio</title>
+  <style>
+    /* Reset & Base Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background-color: #f5f5f5; color: #333; line-height: 1.6; }
+
+    /* Container */
+    .container { max-width: 900px; margin: auto; padding: 20px; }
+
+    /* Header */
+    header { text-align: center; padding: 40px 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
+    header img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; }
+    header h1 { font-size: 2.5em; margin-bottom: 10px; }
+    header h3 { color: #555; margin-bottom: 10px; }
+
+    /* Sections */
+    section { background-color: #fff; margin: 20px 0; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+
+    h2 { color: #222; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+
+    ul { list-style: disc inside; }
+
+    /* Contact */
+    .contact p { margin: 10px 0; }
+    .contact a { color: #0073e6; text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+
+    /* Button style */
+    button { padding: 10px 20px; background-color: #0073e6; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background-color: #005bb5; }
+
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header / Hero -->
+    <header>
+      <img src="image.jpg" alt="Nirmal Tilija">
+      <h1>Nirmal Tilija</h1>
+      <h3>Video Editor & Content Creator</h3>
+      <p>Chimkhola, Myagdi, Nepal</p>
+      <button onclick="scrollToContact()">Contact Me</button>
+    </header>
+
+    <!-- Achievements -->
+    <section>
+      <h2>Achievements</h2>
+      <ul>
+        <li>900 Subscribers</li>
+        <li>4+ Years Teaching</li>
+      </ul>
+    </section>
+
+    <!-- Core Values -->
+    <section>
+      <h2>My Core Values</h2>
+      <ul>
+        <li>Transparent</li>
+        <li>Truth-Driven</li>
+        <li>Collaborative</li>
+        <li>Unpretentious</li>
+        <li>Audacious</li>
+        <li>Growth-Oriented</li>
+      </ul>
+    </section>
+
+    <!-- About Me -->
+    <section>
+      <h2>About Me</h2>
+      <p>Hi, I’m Nirmal Tilija, a passionate Content Creator who loves bringing ideas to life through video. I create engaging and creative content for YouTube and TikTok, sharing stories, tips, and experiences that connect with people. I enjoy experimenting with new formats, learning trends, and producing videos that inspire and entertain. Welcome to my portfolio — feel free to explore my work and connect with me!</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:nirmaltilija29@gmail.com">nirmaltilija29@gmail.com</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/NirmalTilijaMagar" target="_blank">Nirmal Tilija Magar</a></p>
+    </section>
+
+  </div>
+
+  <script>
+    // Scroll to contact section
+    function scrollToContact() {
+      const contactSection = document.getElementById('contact');
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
